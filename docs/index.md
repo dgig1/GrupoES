@@ -2,9 +2,8 @@
 <h3><a href= "https://www.mackenzie.br/graduacao/sao-paulo-higienopolis/sistemas-de-informacao">Sistemas de Informação</a></h3>
 
 
-<font size="+12"><center>
-*&lt;Pizza Express&gt;*
-</center></font>
+
+<h2>Pizza Express</h2>
 
 >*Observação 1: A estrutura inicial deste documento é só um exemplo. O seu grupo deverá alterar esta estrutura de acordo com o que está sendo solicitado na disciplina.*
 
