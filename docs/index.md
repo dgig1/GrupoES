@@ -1,138 +1,149 @@
 <h2><a href= "https://www.mackenzie.br">Universidade Presbiteriana Mackenzie</a></h2>
 <h3><a href= "https://www.mackenzie.br/graduacao/sao-paulo-higienopolis/sistemas-de-informacao">Sistemas de Informação</a></h3>
 
+<font size="+12"><center>
+**Pizza-Express**
+</center></font>
 
+---
 
-<h2>Pizza Express</h2>
+<h4>Autores:</h4>
+<ul>
+<li>Danilo Abude Gigliotti - RA 10443431</li>
+<li>Gabriel Branco Urbinati - RA 10443760</li>
+<li>Davi Portes - RA 10417139</li>
+<li>Renato Gonçalves Ribeiro - RA 10410267</li>
+</ul>
 
+<h4>Professor:</h4>
+<p>Rodrigo Silva</p>
 
-**Conteúdo**
+---
 
-- [Autores](#nome-alunos)
-- [Descrição do Projeto](#introdução-do-projeto)
-- [Análise de Requisitos Funcionais e Não-Fucionais](#descrição-dos-requisitos)
-- [Diagrama de Atividades](#diagrama-de-atividades) 
-- [Diagrama de Casos de Uso](#diagrama-de-comportamento-atores)
-- [Descrição dos Casos de Uso](#descrição-das-funcões)
-- [Diagrama de Senquencia](#diagrama-de-ordem-interações)
-- [Diagrama de Classes](#diagrama-orientado-objetos)
-- [Diagrama de Estados](#diagrama-estrutura-componente)
-- [Diagrama de Implantação](#diagrama-de-hardware-software)
-- [Referências](#referências)
+<h2>1. Introdução do Projeto</h2>
 
+<p>O projeto <b>Pizza-Express</b> visa otimizar o processo de pedidos e entregas de pizzas por meio de um sistema integrado que permite aos clientes realizarem pedidos online, acompanharem o status em tempo real e receberem suas entregas de forma eficiente. A solução envolve o desenvolvimento de um sistema que localiza a loja mais próxima, processa o pedido, calcula o tempo de entrega e gerencia o estoque e as operações internas das lojas.</p>
 
-# Autores
+<p>O objetivo é aumentar a competitividade da Pizza-Express, que enfrenta a perda de 30% de suas vendas devido à concorrência. O sistema proposto atenderá às necessidades operacionais, melhorando a eficiência e a satisfação do cliente.</p>
 
-* Aluno 1 Danilo Abude Gigliotti RA: 10443431
-* Aluno 2 Gabriel Branco Urbinati RA: 10443760
-* Aluno 3 Davi Henrique Portes: 10417139
-* Aluno 4 Renato Goncalves Ribeiro: 10410267
+---
 
+<h2>2. Análise de Requisitos Funcionais e Não Funcionais</h2>
 
-# Descrição do Projeto
+<h4>Requisitos Funcionais:</h4>
+<ol>
+<li><b>Localização da loja mais próxima:</b> O sistema deve localizar automaticamente a loja mais próxima com base no endereço do cliente.</li>
+<li><b>Recebimento de pedidos:</b> O cliente deve poder fazer pedidos via site ou aplicativo.</li>
+<li><b>Rastreamento do pedido:</b> O cliente deve acompanhar o status do pedido em tempo real.</li>
+<li><b>Processamento do pedido:</b> O sistema deve enviar o pedido para a loja mais próxima para preparo e entrega.</li>
+<li><b>Notificações:</b> O cliente deve ser notificado sobre o tempo estimado de entrega e o andamento do pedido.</li>
+<li><b>Gestão do estoque:</b> O sistema deve monitorar o estoque da loja.</li>
+<li><b>Pagamento:</b> O cliente deve realizar pagamentos online ou na entrega, com diferentes métodos aceitos (cartão, PIX, etc.).</li>
+<li><b>Cancelamento e Reembolso:</b> O sistema deve processar cancelamentos e reembolsos.</li>
+</ol>
 
-O projeto visa desenvolver um sistema de software para a cadeia de fast-food Pizza-Express, que enfrenta perdas de 30% nas vendas devido a problemas com a entrega de pedidos. O objetivo é criar uma aplicação que identifique automaticamente a loja mais próxima do cliente e melhore o tempo de entrega para competir com o concorrente, garantindo entregas em menos de 30 minutos.
+<h4>Requisitos Não Funcionais:</h4>
+<ol>
+<li><b>Desempenho:</b> O sistema deve processar até 100 pedidos simultâneos por loja.</li>
+<li><b>Disponibilidade:</b> O sistema deve estar disponível 24/7, com 99,9% de uptime.</li>
+<li><b>Segurança:</b> Todos os dados devem ser criptografados e armazenados de forma segura.</li>
+<li><b>Escalabilidade:</b> O sistema deve ser escalável para suportar o aumento no volume de pedidos e expansão de lojas.</li>
+</ol>
 
-O projeto é dividido em dois sistemas principais:
+---
 
-*Sistema de Atendimento de Pedidos:* Responsável por receber, processar e encaminhar os pedidos para a loja de pizza mais próxima. Sistema de Operações da Fábrica de Pizzas: Suporta as operações internas das lojas para garantir preparo e entrega rápidos. A solução proposta inclui o desenvolvimento de lojas sem espaço de varejo, focadas exclusivamente em receber pedidos, preparar pizzas e realizar entregas eficientes. A aplicação deverá atender a requisitos funcionais (como rastreamento de pedidos e localização de lojas) e não funcionais (como desempenho, segurança e confiabilidade).
+<h2>3. Diagrama de Atividades</h2>
+<p>O diagrama de atividades representa o fluxo completo desde a realização de um pedido até sua entrega. O fluxo inclui as etapas de verificação de estoque, cálculo do tempo de entrega, preparo da pizza, notificações e acompanhamento do pedido.</p>
 
-# Análise de Requisitos Funcionais e Não-Funcionais
+<img src="file-3cuTpA7krpHwt4TbxKV5oc9P" alt="Diagrama de Atividades">
 
-REQUISITOS FUNCIONAIS:
+---
 
-1. Localização da loja mais próxima:
-   - O sistema deve localizar automaticamente a loja de pizza mais próxima do endereço do cliente.
-   
-2. Recebimento de pedidos:
-   - O sistema deve permitir que o cliente faça o pedido por meio de um site ou aplicativo.
-   
-3. Rastreamento do pedido:
-   - O sistema deve permitir que o cliente acompanhe o status do pedido em tempo real.
+<h2>4. Diagrama de Casos de Uso</h2>
+<p>O diagrama de casos de uso mostra as interações entre os principais atores (Cliente, Entregador e Gerente de Sistema) e o sistema. Cada caso de uso representa uma funcionalidade importante, como fazer pedidos, processar pagamento, rastrear pedidos, entre outros.</p>
 
-4. Processamento do pedido:
-   - O sistema deve enviar os pedidos recebidos para a fábrica de pizzas mais próxima para preparação e entrega.
+<img src="file-76Jb7qfW7S0bKfWUcVSNilZi" alt="Diagrama de Casos de Uso">
 
-5. Notificações de pedido:
-   - O sistema deve notificar o cliente sobre o tempo estimado de entrega.
+---
 
-6. Gestão do tempo de entrega:
-   - O sistema deve calcular o tempo estimado de entrega com base na distância e no tempo de preparo.
+<h2>5. Descrição dos Casos de Uso</h2>
 
-7. Gestão de estoque:
-   - O sistema deve monitorar e gerenciar o estoque da fábrica de pizzas.
+<h4>Caso de Uso 1: Fazer Pedido Online</h4>
+<ul>
+<li><b>Ator Principal:</b> Cliente</li>
+<li><b>Objetivo:</b> Permitir que o cliente faça um pedido online, personalize a pizza e escolha o método de pagamento.</li>
+<li><b>Fluxo Principal:</b>
+<ol>
+<li>O cliente faz o pedido no app.</li>
+<li>O sistema localiza a loja mais próxima e verifica o estoque.</li>
+<li>O pedido é processado e o cliente recebe a confirmação.</li>
+</ol></li>
+</ul>
 
-8. Relatórios de desempenho:
-   - O sistema deve gerar relatórios mensais sobre o tempo de entrega, número de pedidos e desempenho das lojas
+<h4>Caso de Uso 2: Localizar Loja Mais Próxima</h4>
+<ul>
+<li><b>Ator Principal:</b> Sistema</li>
+<li><b>Objetivo:</b> Identificar a loja mais próxima do cliente para otimizar o tempo de entrega.</li>
+</ul>
 
-9. Processamento de Pagamentos Online:
-   - O sistema deve permitir que os clientes realizem pagamentos online por meio de diversos métodos, como cartões de crédito, débito, carteiras digitais (ex: PayPal, Apple Pay) e PIX.
+<h4>Caso de Uso 3: Verificar Disponibilidade de Estoque</h4>
+<ul>
+<li><b>Ator Principal:</b> Sistema</li>
+<li><b>Objetivo:</b> Verificar se os ingredientes necessários estão disponíveis antes de processar o pedido.</li>
+</ul>
 
-10. Confirmação de Pagamento:
-   - O sistema deve confirmar o pagamento imediatamente após a transação ser concluída, notificando o cliente e a loja.
+<h4>Caso de Uso 4: Processar Pagamento</h4>
+<ul>
+<li><b>Ator Principal:</b> Cliente</li>
+<li><b>Objetivo:</b> Permitir que o cliente pague pelo pedido via métodos online ou na entrega.</li>
+</ul>
 
-11. Opção de Pagamento na Entrega:
-   - O sistema deve oferecer ao cliente a opção de pagar na entrega, seja em dinheiro ou por cartão com uma maquininha fornecida pelo entregador.
+<h4>Caso de Uso 5: Acompanhar Pedido em Tempo Real</h4>
+<ul>
+<li><b>Ator Principal:</b> Cliente</li>
+<li><b>Objetivo:</b> Permitir que o cliente acompanhe o status e localização da entrega.</li>
+</ul>
 
-12. Gerenciamento de Transações:
-   - O sistema deve manter um histórico de transações financeiras, permitindo ao cliente visualizar pagamentos passados e ao administrador consultar registros para fins de auditoria.
+<h4>Caso de Uso 6: Entregar Pizza</h4>
+<ul>
+<li><b>Ator Principal:</b> Entregador</li>
+<li><b>Objetivo:</b> Realizar a entrega da pizza para o cliente no local informado.</li>
+</ul>
 
-13. Reembolso e Cancelamento:
-   - O sistema deve permitir o cancelamento de pedidos e processar reembolsos automaticamente, caso o pedido seja cancelado dentro de um prazo especificado.
+<h4>Caso de Uso 7: Gerar Relatórios de Desempenho</h4>
+<ul>
+<li><b>Ator Principal:</b> Gerente de Sistema</li>
+<li><b>Objetivo:</b> Gerar relatórios sobre o desempenho da loja, tempo de entrega e satisfação dos clientes.</li>
+</ul>
 
-REQUISITOS NÃO FUNCIONAIS:
-1. Desempenho:
-   - O sistema deve ser capaz de processar 100 pedidos simultâneos por loja.
+---
 
-2. Disponibilidade:
-   - O sistema deve estar disponível 24/7, com uma taxa de uptime de 99,9%.
+<h2>6. Diagrama de Sequência</h2>
+<p>Este diagrama representará a ordem e a interação entre os atores e o sistema, mostrando como os objetos se comunicam para realizar um pedido e uma entrega.</p>
+<p><i>Em construção</i></p>
 
-3. Segurança:
-   - O sistema deve garantir que todos os dados de clientes e transações sejam armazenados de forma criptografada.
-   
-4. Tempo de resposta:
-   - O sistema deve ter um tempo de resposta inferior a 2 segundos para cada solicitação de localização da loja mais próxima e para o processamento de pedidos.
+---
 
-5. Escalabilidade:
-   - O sistema deve ser escalável para suportar um aumento no número de pedidos e lojas.
+<h2>7. Diagrama de Classes</h2>
+<p>O diagrama de classes apresentará as relações entre as classes principais, seus atributos e métodos, facilitando o entendimento do modelo orientado a objetos do sistema.</p>
+<p><i>Em construção</i></p>
 
-6. Conformidade Legal:
-   - O sistema deve estar em conformidade com a LGPD (Lei Geral de Proteção de Dados) e outras regulamentações aplicáveis.
+---
 
-7. Usabilidade:
-   - A interface deve ser simples e intuitiva, permitindo que os clientes realizem pedidos com facilidade.
+<h2>8. Diagrama de Estados</h2>
+<p>Este diagrama representará os diferentes estados que o sistema pode assumir durante o ciclo de vida do pedido, como "pedido recebido", "em preparo", "em entrega", e "concluído".</p>
+<p><i>Em construção</i></p>
 
+---
 
+<h2>9. Diagrama de Implantação</h2>
+<p>Este diagrama detalhará a relação entre o hardware e o software, mostrando como o sistema será implementado e distribuído em servidores e dispositivos móveis.</p>
+<p><i>Em construção</i></p>
 
+---
 
-# Diagrama de Atividades
-
-*&lt;Diagrama para visualizer as pessoas das áreas de negócios e de desenvolvimento de uma organização para entender o processo e comportamento.&gt;*
-
-# Diagrama de Casos de Uso
-
-*&lt;Diagrama para visualizar o comportamento dos atores&gt;*
-
-# Descrição dos Casos de Uso
-
-*&lt;Descrição do comportamento entre os atores/resquisitos&gt;*
-
-# Diagrama de Sequência
-
-*&lt;Diagrama de ordem e interação dos objetos&gt;*
-
-# Diagrama de Classes
-
-*&lt;Diagrama de relacionamento entre classes para os seus atributos e operações&gt;*
-
-# Diagrama de Estados
-
-*&lt;Diagrama para permite modelar o comportamento interno de um determinado objeto, subsistema ou sistema global&gt;*
-
-# Diagrama de Implantação
-
-*&lt;Diagrama para exibir o relacionamento de hardware e software no projeto&gt;*
-
-# Referências
-
-*&lt;Lista de referências&gt;*
+<h2>10. Referências</h2>
+<ul>
+<li>Documentos internos do projeto Pizza-Express.</li>
+<li><a href="https://www.mackenzie.br">Material didático de Engenharia de Software</a>.</li>
+</ul>
