@@ -62,7 +62,7 @@
 <h2>4. Diagrama de Casos de Uso</h2>
 <p>O diagrama de casos de uso mostra as interações entre os principais atores (Cliente, Entregador e Gerente de Sistema) e o sistema. Cada caso de uso representa uma funcionalidade importante, como fazer pedidos, processar pagamento, rastrear pedidos, entre outros.</p>
 
-<img src="DiagramaCasodeUso.png" alt="casodeuso" width="180">
+<img src="DiagramaCasodeUso.png" alt="casodeuso">
 
 
 ---
