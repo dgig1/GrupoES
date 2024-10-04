@@ -11,8 +11,8 @@
 <ul>
 <li>Danilo Abude Gigliotti - RA 10443431</li>
 <li>Gabriel Branco Urbinati - RA 10443760</li>
-<li>Davi Portes - RA 10417139</li>
 <li>Renato Gonçalves Ribeiro - RA 10410267</li>
+<li>Davi Portes - RA 10417139</li>
 </ul>
 
 <h4>Professor:</h4>
