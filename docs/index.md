@@ -55,14 +55,14 @@
 <h2>3. Diagrama de Atividades</h2>
 <p>O diagrama de atividades representa o fluxo completo desde a realização de um pedido até sua entrega. O fluxo inclui as etapas de verificação de estoque, cálculo do tempo de entrega, preparo da pizza, notificações e acompanhamento do pedido.</p>
 
-<img src="GrupoES/DiagramaAtividades.png" alt="atividades">
+<img src="DiagramaAtividades.png" alt="atividades">
 
 ---
 
 <h2>4. Diagrama de Casos de Uso</h2>
 <p>O diagrama de casos de uso mostra as interações entre os principais atores (Cliente, Entregador e Gerente de Sistema) e o sistema. Cada caso de uso representa uma funcionalidade importante, como fazer pedidos, processar pagamento, rastrear pedidos, entre outros.</p>
 
-<img src="GrupoES/DiagramaCasodeUso.png" alt="casodeuso" width="180">
+<img src="DiagramaCasodeUso.png" alt="casodeuso" width="180">
 
 
 ---
