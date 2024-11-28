@@ -120,26 +120,31 @@
 ---
 
 <h2>6. Diagrama de Sequência</h2>
-<p>Este diagrama representará a ordem e a interação entre os atores e o sistema, mostrando como os objetos se comunicam para realizar um pedido e uma entrega.</p>
-<p><i>Em construção</i></p>
+<p>O diagrama de sequência descreve as interações entre Cliente, Sistema, Loja e Entregador para processar um pedido de pizza, desde sua criação até a entrega. Ele detalha ações como verificar estoque, preparar o pedido, calcular o tempo de entrega e notificar o cliente em cada etapa.</p>
+
+<img src="sequencia.png" alt="sequencia">
 
 ---
 
 <h2>7. Diagrama de Classes</h2>
-<p>O diagrama de classes apresentará as relações entre as classes principais, seus atributos e métodos, facilitando o entendimento do modelo orientado a objetos do sistema.</p>
-<p><i>Em construção</i></p>
+<p>O diagrama de classes define as principais entidades do sistema, como Cliente, Pedido, Item, Sistema, Loja e Entregador, com seus atributos e métodos. Ele detalha as relações entre essas entidades, como associações entre pedidos, itens e o processamento logístico.</p>
+
+<img src="classes.png" alt="classes">
 
 ---
 
 <h2>8. Diagrama de Estados</h2>
-<p>Este diagrama representará os diferentes estados que o sistema pode assumir durante o ciclo de vida do pedido, como "pedido recebido", "em preparo", "em entrega", e "concluído".</p>
-<p><i>Em construção</i></p>
+<p>O diagrama de estados mostra a evolução do pedido no sistema, desde o recebimento até a entrega ou cancelamento. Ele detalha estados como "Pedido Recebido", "Em Preparo" e "Concluído", incluindo transições condicionais, como disponibilidade de estoque e notificações ao cliente.</p>
+
+<img src="estado.png" alt="estado">
+
 
 ---
 
 <h2>9. Diagrama de Implantação</h2>
-<p>Este diagrama detalhará a relação entre o hardware e o software, mostrando como o sistema será implementado e distribuído em servidores e dispositivos móveis.</p>
-<p><i>Em construção</i></p>
+<p>O diagrama de implantação ilustra a infraestrutura física do sistema, incluindo os componentes Cliente, Servidor de Aplicação, Servidor de Banco de Dados, Loja e Entregador. Ele descreve como esses elementos se conectam para realizar funções como processamento de pedidos, consultas de estoque e entrega.</p>
+
+<img src="implantacao.png" alt="implantacao">
 
 ---
 
